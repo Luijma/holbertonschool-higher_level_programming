@@ -24,7 +24,11 @@ listint_t *insert_node(listint_t **head, int number)
 		return (newnode);
 	}
 
-	while (current->next && current->next->n < number)
+	/* This while loop is probably the issue, I can't
+	 * quite get it to work for the last 2 checkers
+	 * if it doesnt work check in the morning
+	 */
+	while (curent && current->next && current->next->n < number)
 	{
 		current = current->next;
 	}
