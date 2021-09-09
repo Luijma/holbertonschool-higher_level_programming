@@ -23,10 +23,8 @@ listint_t *insert_node(listint_t **head, int number)
 		*head = newnode;
 		return (newnode);
 	}
-
-	/* This while loop is probably the issue, I can't
-	 * quite get it to work for the last 2 checkers
-	 * if it doesnt work check in the morning
+	/**
+	 * This while loop is the issue
 	 */
 	while (curent && current->next && current->next->n < number)
 	{
