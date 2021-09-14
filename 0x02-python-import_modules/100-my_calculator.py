@@ -18,7 +18,7 @@ if __name__ == "__main__":
     elif operator == "/":
         result = div(int(argv[1]), int(argv[3]))
     else:
-        print("Unknown opertor. Available operators: +, -, * and /")
+        print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
     print("{:s} {:s} {:s} = {:d}".format(argv[1], operator, argv[3], result))
