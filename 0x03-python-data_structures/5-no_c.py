@@ -3,5 +3,5 @@ def no_c(my_string):
     noC = ""
     for current in my_string:
         if current != "C" and current != "c":
-            noC += my_string
+            noC += current
     return noC
