@@ -83,11 +83,6 @@ int compare_lists(listint_t *head_1, listint_t *head_2)
 	listint_t *temp_1 = head_1;
 	listint_t *temp_2 = head_2;
 
-	if (!temp_1 && !temp_2)
-	{
-		return (1);
-	}
-
 	while (temp_1 && temp_2)
 	{
 		if (temp_1->n == temp_2->n)
