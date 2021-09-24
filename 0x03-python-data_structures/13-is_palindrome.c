@@ -8,18 +8,14 @@ int is_palindrome(listint_t **head)
 {
 	int is_isnot = 0;
 	int flag = 1;
-	listint_t *slower;
-	listint_t *slowest;
-	listint_t *faster;
-	listint_t *middle = NULL;
-	listint_t *lasthalf = NULL;
+	listint_t *slower, *slowest, *faster;
+	listint_t *middle = NULL, *lasthalf = NULL;
 
 	if (!head || !*head)
 		return (0);
 	slower = *head;
 	slowest = *head;
 	faster = *head;
-
 	while (faster && faster->next)
 	{
 		faster = faster->next->next;
