@@ -31,7 +31,6 @@ int is_palindrome(listint_t **head)
 		middle = slower;
 		slower = slower->next;
 	}
-
 	lasthalf = slower;
 	slowest->next = NULL;
 	/* SETTING FIRST HALF OF LIST */
@@ -62,9 +61,9 @@ void turn_around(listint_t **head)
 	listint_t *current = *head;
 	listint_t *fast;
 
-	while (!current)
+	while (current)
 	{
-		fast = fast->next;
+		fast = current->next;
 		current->next = slow;
 		slow = current;
 		current = fast;
