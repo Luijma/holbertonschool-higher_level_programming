@@ -6,7 +6,6 @@
  */
 int is_palindrome(listint_t **head)
 {
-	int is_isnot = 0;
 	int flag = 1;
 	listint_t *slower, *slowest, *faster;
 	listint_t *middle = NULL, *lasthalf = NULL;
