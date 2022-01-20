@@ -35,7 +35,7 @@ class Square:
         Args:
             value (int): contains size from __size attribute """
         if type(value) != int:
-            raise TypeError("size mut be an integer")
+            raise TypeError("size must be an integer")
         if self.__size < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
