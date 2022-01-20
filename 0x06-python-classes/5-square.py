@@ -34,7 +34,8 @@ class Square:
                 print("")
                 j += 1
                 i = 0
-
+        else:
+            print("")
     @property
     def size(self):
         """ Docstring of size getter """
