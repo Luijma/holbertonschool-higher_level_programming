@@ -26,13 +26,14 @@ class Square:
         """ my_print will print the square with # """
         i = 0
         j = 0
-        while j < self.size:
-            while i < self.size:
-                print("#", end="")
-                i += 1
-            print("")
-            j += 1
-            i = 0
+        if self.size != 0:
+            while j < self.size:
+                while i < self.size:
+                    print("#", end="")
+                    i += 1
+                print("")
+                j += 1
+                i = 0
 
     @property
     def size(self):
