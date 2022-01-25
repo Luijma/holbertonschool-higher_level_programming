@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-""" 
+"""
     My addition module
 """
+
+
 def add_integer(a, b=98):
     """ Addition function """
     if type(a) != int and type(a) != float:
