@@ -3,6 +3,11 @@
 
 
 def matrix_divided(matrix, div):
+    """ Divides all elemets in a matrix
+    Args:
+        matrix (list): matrix to be divided
+        div (Union[int, float]): number to be divided
+    """
     is_correct_type = False
     new_matrix = [i[:] for i in matrix]
     if all(isinstance(ele, list) for ele in new_matrix) is True:
@@ -16,7 +21,8 @@ def matrix_divided(matrix, div):
             if (is_correct_type is False):
                 break
     if(is_correct_type is False):
-        raise TypeError("matrix must be a matrix (list of lists)\
-                integers/floats")
+        raise TypeError("matrix must be a matrix (list of lists)" +
+                        " of integers/floats")
     new_matrix = [[round(i / div, 2) for i in j] for j in new_matrix]
     return new_matrix
+    """ returns a new matrix with new values """
