@@ -1,0 +1,40 @@
+""" Doctests for say_my_name function """
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+""" Happy path, first and last name are valid """
+
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+""" Bad First Name """
+
+>>> try:
+...	say_my_name(12, "White")
+... except Exception as e:
+... 	print(e)
+first_name must be a string
+
+""" Check propper exception raised first name """
+
+>>> try:
+... 	say_my_name(12, "White")
+... except Exception as e:
+... 	print(e.__class__.__name__)
+TypeError
+
+""" Check propper exception raised last name """
+
+>>> try:
+... 	say_my_name("Betty", 12)
+... except Exception as e:
+...     print(e.__class__.__name__)
+TypeError
+
+""" Bad Last Name """
+
+>>> try:
+...     say_my_name("Betty", 12)
+... except Exception as e:
+...     print(e)
+last_name must be a string
