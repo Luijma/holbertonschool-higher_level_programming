@@ -11,10 +11,10 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """ constructor 
         Args:
-            width (int): width of rectangle
-            height (int): height of rectangle """
-        self.width = width
-        welf.height = height
+            width (int): width of rectangle.
+            height (int): height of rectangle. """
+        self.__width(width)
+        self.__height(height)
 
     @property
     def width(self):
