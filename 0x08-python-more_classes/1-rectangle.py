@@ -8,14 +8,6 @@ class Rectangle:
     __width = None
     __height = None
 
-    def __init__(self, width=0, height=0):
-        """ constructor
-        Args:
-            width (int): width of rectangle.
-            height (int): height of rectangle. """
-        self.__width(width)
-        self.__height(height)
-
     @property
     def width(self):
         """ width getter """
@@ -30,7 +22,7 @@ class Rectangle:
             value (int): contains width to assign """
         if (type(value) != int):
             raise TypeError("width must be an integer")
-        if (width < 0):
+        if (value < 0):
             raise ValueError("width must be >= 0")
         self.__width = value
 
@@ -46,8 +38,24 @@ class Rectangle:
 
         Args:
             value (int): contains width to assign """
+        if (type(value) != int):
+            raise TypeError("height must be an integer")
+        if (value < 0):
+            raise ValueError("height must be >= 0")
+        self.__height = value
+
+    def __init__(self, width=0, height=0):
+        """ constructor
+        Args:
+            width (int): width of rectangle.
+            height (int): height of rectangle. """
+        if (type(width) != int):
+            raise TypeError("width must be an integer")
+        if (width < 0):
+            raise ValueError("width must be >= 0")
         if (type(height) != int):
             raise TypeError("height must be an integer")
         if (height < 0):
             raise ValueError("height must be >= 0")
-        self.__height = value
+        self.__width = width
+        self.__height = height
