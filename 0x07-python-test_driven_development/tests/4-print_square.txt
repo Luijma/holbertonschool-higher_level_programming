@@ -1,0 +1,68 @@
+""" Test cases for print_square function """
+
+>>> print_square = __import__('4-print_square').print_square
+
+""" Happy path, all values given are valid """
+
+>>> print_square(4)
+####
+####
+####
+####
+
+""" Size is 0 """
+
+>>> print_square(0)
+<BLANKLINE>
+
+""" Size is 1 """
+
+>>> print_square(1)
+#
+
+""" Size is double digit number
+
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+""" size is less than 0, Check Error Message """
+
+>>> try:
+...	print_square(-5)
+... except Exception as e:
+...	print(e)
+size must be >= 0
+
+""" size is less than 0, check exception raised """
+
+>>> try:
+...	print_square(-5)
+... except Exception as e:
+... 	print(e.__class__.__name__)
+ValueError
+
+""" size must be an integer, check Error Message """
+
+>>> try:
+...	print_square("School")
+... except Exception as e:
+...	print(e)
+size must be an integer
+
+""" size must be an integer, check exception raised """
+
+>>> try:
+... 	print_square("School")
+... except Exception as e:
+...	print(e.__class__.__name__)
+TypeError
+
