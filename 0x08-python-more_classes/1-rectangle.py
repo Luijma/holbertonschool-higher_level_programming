@@ -9,7 +9,7 @@ class Rectangle:
     __height = None
 
     def __init__(self, width=0, height=0):
-        """ constructor 
+        """ constructor
         Args:
             width (int): width of rectangle.
             height (int): height of rectangle. """
