@@ -15,7 +15,6 @@ if os.path.isfile(filename):
     items = load_from_json_file(filename)
 else:
     items = []
-new_items = sys.argv[1:]
-items.extend(new_items)
+items.extend(sys.argv[1:])
 
 save_to_json_file(items, filename)
