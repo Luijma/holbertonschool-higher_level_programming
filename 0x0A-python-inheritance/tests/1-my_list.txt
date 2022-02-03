@@ -1,0 +1,49 @@
+============================================
+''' This is the Start of Unit Testing... '''
+============================================
+''' TESTTING WITH the following... '''
+
+''' Does the same as test below, but gives more details '''
+# python3 -m doctest -v ./tests/file_name.txt
+# python3 -m doctest -v ./tests/file_name.txt | tail -2
+
+======================================
+''' Importing TEMPLATE function''''
+======================================
+>>> MyList = __import__('1-my_list').MyList
+
+==============
+SUCCESS CASES
+==============
+
+
+Category 1
+==========
+
+Test 1: Prints sorted list (Ascending)
+  ''' Expecting: list but in ascending order '''
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
+==========================
+CASES THAT SHOULD NOT WORK
+==========================
+
+Category 2
+==========
+
+Test 2: 
+
+
+Category 3
+=========
+
