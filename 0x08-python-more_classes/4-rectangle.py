@@ -86,11 +86,13 @@ class Rectangle:
                 break
             rect += "\n"
         return rect
+
     def __repr__(self):
         """ returns visual representatin of class """
 
         rep = ""
         rep += type(self).__name__
         rep += "({:d}, {:d})".format(self.width, self.height)
+
         return rep
         """ returns repr """
