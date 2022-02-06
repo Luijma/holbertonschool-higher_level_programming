@@ -5,7 +5,6 @@
 class Rectangle:
     """Rectangle class description."""
 
-    print_symbol = "#"
     number_of_instances = 0
     __height = None
     __width = None
@@ -61,7 +60,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = height
         self.__width = width
-        number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     def area(self):
         """ area docstring """
@@ -84,7 +83,7 @@ class Rectangle:
             return rect
         for row in range(self.height):
             for column in range(self.width):
-                rect += Rectangle.print_symbol
+                rect += "#"
             if row == (self.height - 1):
                 break
             rect += "\n"
@@ -102,5 +101,5 @@ class Rectangle:
 
     def __del__(self):
         """ destructor for rectangle class """
-        number_of_instances -= 1
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
