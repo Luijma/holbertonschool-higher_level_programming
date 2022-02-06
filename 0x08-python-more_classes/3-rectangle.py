@@ -76,7 +76,9 @@ class Rectangle:
     def __str__(self):
         """ returns representation of rectangle """
         rect = ""
-
+        if (self.height == 0 or
+                self.width == 0):
+            return rect
         for row in range(self.height):
             for column in range(self.width):
                 rect += "#"
