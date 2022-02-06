@@ -78,8 +78,7 @@ class Rectangle:
         rect = ""
 
         for row in range(self.height):
-            for column in range (self.width):
+            for column in range(self.width):
                 rect += "#"
             rect += "\n"
         return rect
-
