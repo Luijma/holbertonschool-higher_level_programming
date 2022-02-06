@@ -67,5 +67,5 @@ class Rectangle:
 
     def perimeter(self):
         """ perimter docstring """
-        return 2 * (self.height * self.width)
+        return 2 * (self.height + self.width)
         """ returns perimeter """
