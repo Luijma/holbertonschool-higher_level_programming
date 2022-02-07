@@ -7,6 +7,10 @@ class MyList(list):
     """ My List class
     """
 
+    def __init__(self):
+        """ initiates list """
+        list.__init__(self)
+
     def print_sorted(self):
         """ prints a sorted list
         """
