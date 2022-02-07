@@ -84,14 +84,14 @@ class Rectangle:
             return rect
         for row in range(self.height):
             for column in range(self.width):
-                rect += Rectangle.print_symbol
+                rect += str(Rectangle.print_symbol)
             if row == (self.height - 1):
                 break
             rect += "\n"
         return rect
 
     def __repr__(self):
-        """ returns visual representatin of class """
+        """ returns visual representation of class """
 
         rep = ""
         rep += type(self).__name__
