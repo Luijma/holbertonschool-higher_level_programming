@@ -63,9 +63,9 @@ class Rectangle:
         self.__width = width
         Rectangle.number_of_instances += 1
 
-
     def area(self):
         """ area docstring """
+
         return self.height * self.width
         """ returns area of rectangle"""
 
