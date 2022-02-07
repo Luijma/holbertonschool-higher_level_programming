@@ -44,7 +44,12 @@ Test 3: Test append()
 >>> print(my_list)
 [1, 4, 2, 3, 5, 6]
 
-Test 4: empty list
+Test 4: append w negative number
+>>> my_list.append(-10)
+>>> print(my_list)
+[1, 4, 2, 3, 5, 6, -10]
+
+Test 5: empty list
 >>> empty_list = MyList()
 >>> empty_list.print_sorted()
 []
