@@ -63,6 +63,7 @@ class Rectangle:
         self.__width = width
         Rectangle.number_of_instances += 1
 
+
     def area(self):
         """ area docstring """
         return self.height * self.width
@@ -84,7 +85,7 @@ class Rectangle:
             return rect
         for row in range(self.height):
             for column in range(self.width):
-                rect += str(Rectangle.print_symbol)
+                rect += str(self.print_symbol)
             if row == (self.height - 1):
                 break
             rect += "\n"
