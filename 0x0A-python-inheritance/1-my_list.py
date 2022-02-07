@@ -9,10 +9,11 @@ class MyList(list):
 
     def __init__(self):
         """ initiates list """
-        list.__init__(self)
+        super().__init__()
 
     def print_sorted(self):
         """ prints a sorted list
         """
-
-        print(self.sort())
+        temp = self[:]
+        temp.sort()
+        print(temp)
