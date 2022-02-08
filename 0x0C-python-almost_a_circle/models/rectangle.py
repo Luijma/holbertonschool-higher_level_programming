@@ -119,7 +119,11 @@ class Rectangle(Base):
 
     def display(self):
         """ Displays rectangle in # """
+        for new_line in range(self.y):
+            print("")
         for row in range(self.height):
+            for spaces in range(self.x):
+                print(" ", end="")
             for column in range(self.width):
                 print("#", end="")
             print("")
