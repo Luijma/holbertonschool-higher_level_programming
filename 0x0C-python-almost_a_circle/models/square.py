@@ -19,3 +19,14 @@ class Square(Rectangle):
                                                         self.width)
         return rep
         """ Returns string rep of Square """
+
+    @property
+    def size(self):
+        """ size getter """
+        value = super().width
+        return value
+        """ gets size from parent getter """
+
+    @size.setter
+    def size(self, value):
+        super(__class__, self.__class__).width.__set__(self, value)
