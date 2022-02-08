@@ -4,6 +4,8 @@
 
 
 class Rectangle(Base):
+    """ Rectangle Class for almost a circle """
+
     __width = None
     __height = None
     __x = None
