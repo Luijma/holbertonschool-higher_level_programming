@@ -139,10 +139,14 @@ class Rectangle(Base):
         return rep
         """ Returns string rep of Rectangle """
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ assigns argument to each attribute """
 
-        attr = ["id", "width", "height", "x", "y"]
-        for attribute in attr:
-            for arg in args:
-                setattr(self, attribute, arg)
+        if (args and args is not None):
+            attr = ["id", "width", "height", "x", "y"]
+            for attribute in attr:
+                for arg in args:
+                    setattr(self, attribute, arg)
+        elif (kwargs is not None):
+            for key, value in kwargs.items():
+                setattr(self, key, value)
