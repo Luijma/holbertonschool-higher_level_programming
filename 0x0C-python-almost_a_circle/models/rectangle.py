@@ -122,6 +122,4 @@ class Rectangle(Base):
         for row in range(self.height):
             for column in range(self.width):
                 print("#", end="")
-            if row == (self.height - 1):
-                break
             print("")
