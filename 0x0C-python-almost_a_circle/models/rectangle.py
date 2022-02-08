@@ -145,4 +145,4 @@ class Rectangle(Base):
         attr = ["id", "width", "height", "x", "y"]
         for attribute in attr:
             for arg in args:
-                getattr(self, attribute) = arg
+                setattr(self, attribute, arg)
