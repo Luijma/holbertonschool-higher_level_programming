@@ -138,3 +138,11 @@ class Rectangle(Base):
 
         return rep
         """ Returns string rep of Rectangle """
+
+    def update(self, *args):
+        """ assigns argument to each attribute """
+        self.id = args[0]
+        self.width = args[1]
+        self.height = args[2]
+        self.x = args[3]
+        self.y = args[4]
