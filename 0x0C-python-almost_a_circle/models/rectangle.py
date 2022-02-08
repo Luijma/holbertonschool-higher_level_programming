@@ -121,7 +121,7 @@ class Rectangle(Base):
         """ Displays rectangle in # """
         for row in range(self.height):
             for column in range(self.width):
-                print("#")
+                print("#", end="")
             if row == (self.height - 1):
                 break
             print("")
