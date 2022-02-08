@@ -141,8 +141,8 @@ class Rectangle(Base):
 
     def update(self, *args):
         """ assigns argument to each attribute """
-        self.id = args[0]
-        self.width = args[1]
-        self.height = args[2]
-        self.x = args[3]
-        self.y = args[4]
+
+        attr = ["id", "width", "height", "x", "y"]
+        for attribute in attr:
+            for arg in args:
+                getattr(self, attribute) = arg
