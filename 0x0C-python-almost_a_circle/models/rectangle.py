@@ -26,7 +26,10 @@ class Rectangle(Base):
 
         Args:
             value (int): width of rectangle """
-
+        if (type(value) != int):
+            raise TypeError("width must be an integer")
+        if (value <= 0):
+            raise ValueError("width must be > 0")
         self.__width = value
 
     @property
@@ -41,6 +44,10 @@ class Rectangle(Base):
 
         Args:
             value (int): height of rectangle """
+        if (type(value) != int):
+            raise TypeError("height must be an integer")
+        if (value <= 0):
+            raise ValueError("width must be > 0")
         self.__height = value
 
     @property
@@ -55,6 +62,10 @@ class Rectangle(Base):
 
             Args:
                 value (int): x var """
+        if (type(value) != int):
+            raise TypeError("x must be an integer")
+        if (value < 0):
+            raise ValueError("x must be >= 0")
         self.__x = value
 
     @property
@@ -69,11 +80,33 @@ class Rectangle(Base):
 
             Args:
                 value (int): x var """
+        if (type(value) != int):
+            raise TypeError("y must be an integer")
+        if (value < 0):
+            raise ValueError("y must be >= 0")
         self.__y = value
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """ rectangle constructor """
         super().__init__(id)
+        if (type(width) != int):
+            raise TypeError("width must be an integer")
+        if (type(height) != int):
+            raise TypeError("height must be an integer")
+        if (type(x) != int):
+            raise TypeError("x must be an integer")
+        if (type(y) != int):
+            raise TypeError("y must be an integer")
+
+        if (width <= 0):
+            raise ValueError("width must be > 0")
+        if (height <= 0):
+            raise ValueError("height must be > 0")
+        if (x < 0):
+            raise ValueError("x must be >= 0")
+        if (y < 0):
+            raise ValueError("y must be >= 0")
+
         self.__width = width
         self.__height = height
         self.__x = x
