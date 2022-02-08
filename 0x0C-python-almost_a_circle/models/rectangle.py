@@ -144,9 +144,10 @@ class Rectangle(Base):
 
         if (args and args is not None):
             attr = ["id", "width", "height", "x", "y"]
-            for attribute in attr:
-                for arg in args:
-                    setattr(self, attribute, arg)
+            i = 0
+            while(i < len(args)):
+                setattr(self, attr[i], args[i])
+                i += 1
         elif (kwargs is not None):
             for key, value in kwargs.items():
                 setattr(self, key, value)
