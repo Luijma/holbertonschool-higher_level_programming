@@ -2,7 +2,9 @@
 """ Module for Rectangle
 """
 
+
 Base = __import__('base').Base
+
 
 class Rectangle(Base):
     """ Rectangle Class for almost a circle """
