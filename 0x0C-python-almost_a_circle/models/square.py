@@ -43,3 +43,8 @@ class Square(Rectangle):
                 i += 1
         elif kwargs and kwargs is not None:
             super().update(**kwargs)
+
+    def to_dictionary(self):
+        """ returns dic representation of square """
+        dic = {'id': self.id, 'size': self.size, 'x': self.x, 'y': self.y}
+        return dic
