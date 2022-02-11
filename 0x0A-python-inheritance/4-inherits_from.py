@@ -4,7 +4,7 @@
 
 
 def inherits_from(obj, a_class):
-    """ docstring
+    """ checks if obj inherits from class
     """
 
     return issubclass(class, classinfo)
