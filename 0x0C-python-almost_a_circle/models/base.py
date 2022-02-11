@@ -45,3 +45,13 @@ class Base:
             else:
                 objects = [obj.to_dictionary() for obj in list_objs]
                 a_file.write(cls.to_json_string(objects))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ loads json string into object
+        """
+
+        if json_string is None:
+            return []
+        else:
+            return json.loads(json_string)
