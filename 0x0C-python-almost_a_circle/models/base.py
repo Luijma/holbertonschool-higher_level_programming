@@ -3,6 +3,9 @@
 """
 
 
+import json
+
+
 class Base:
     """ Base Class for almost a circle project
     """
@@ -18,3 +21,12 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    def to_json_string(list_dictoinaries):
+        """ returns json representation of dictionaries
+        """
+        jstring = ""
+
+        if (not list_dictionaries) or (list_dictionaries is None):
+            return "[]"
+        return json.dumps(list_dictionaries)
