@@ -23,7 +23,7 @@ class Base:
             self.id = Base.__nb_objects
 
     @staticmethod
-    def to_json_string(list_dictoinaries):
+    def to_json_string(list_dictionaries):
         """ returns json representation of dictionaries
         """
         jstring = ""
