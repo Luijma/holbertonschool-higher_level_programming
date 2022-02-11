@@ -60,6 +60,6 @@ class Base:
     def create(cls, **dictionary):
         """ creates instance with attributes set
         """
-        temp = cls(1, 1)
+        temp = cls(**dictionary)
         temp.update(**dictionary)
         return temp
