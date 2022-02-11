@@ -7,7 +7,7 @@ def is_same_class(obj, a_class):
     """ compares class names
     """
 
-    if obj.__name__ == a_class.__name__:
+    if (type(obj) == a_class):
         return True
     else:
         return False
