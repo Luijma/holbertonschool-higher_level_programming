@@ -44,4 +44,4 @@ class Base:
                 a_file.write("[]")
             else:
                 objects = [obj.to_dictionary() for obj in list_objs]
-                a_file.write(json.dumps(cls.to_json_string(objects)))
+                a_file.write(cls.to_json_string(objects))
