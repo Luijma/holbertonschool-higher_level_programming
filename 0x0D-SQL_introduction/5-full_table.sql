@@ -1,2 +1,2 @@
 -- Shows full description of table
-\dt+
+SHOW CREATE TABLE first_table
