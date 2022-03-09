@@ -1,7 +1,6 @@
 -- lists number of records with equal scores
-SELECT
-	score, count(*)
-AS NUMBER FROM
+SELECT score, count(*)
+AS number FROM
 	second_table
 GROUP BY
 	score
