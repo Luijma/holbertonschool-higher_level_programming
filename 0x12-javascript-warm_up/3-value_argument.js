@@ -1,11 +1,10 @@
 #!/usr/bin/node
 // Prints argv value
 
-const argc = process.argv.length;
-const args = process.argv;
+const arg = process.argv[2];
 
-if (argc >= 3) {
-  console.log(args[2]);
+if (arg === undefined) {
+  console.log(arg);
 } else {
   console.log('No argument');
 }
