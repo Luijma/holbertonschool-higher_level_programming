@@ -13,7 +13,9 @@ class Rectangle {
       for (let j = 0; j < this.width; j++) {
         rect += str;
       }
-      rect += '\n';
+      if (i !== this.height - 1) {
+        rect += '\n';
+      }
     }
     console.log(rect);
   }
