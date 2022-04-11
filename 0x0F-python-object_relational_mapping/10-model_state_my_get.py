@@ -20,5 +20,8 @@ if __name__ == '__main__':
 
         states = session.execute(statement).scalars().all()
 
-        for state in states:
-            print(state.id)
+        if (states):
+            for state in states:
+                print(state.id)
+        else:
+            print("Not found")
