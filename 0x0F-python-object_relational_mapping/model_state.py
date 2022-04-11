@@ -4,7 +4,9 @@
 from sqlalchemy import Column, String, Integer
 from sqlalchemy.ext.declarative import declarative_base
 
+
 Base = declarative_base()
+
 
 class State(Base):
     """ Inherits from base class to link MYSQL Table state"""
