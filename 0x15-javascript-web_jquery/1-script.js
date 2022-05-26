@@ -1,2 +1,2 @@
 const $element = $('header');
-$headerElem.css('color', '#FF0000');
+$element.css('color', '#FF0000');
