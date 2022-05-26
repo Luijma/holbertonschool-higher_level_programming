@@ -1,2 +1,1 @@
-const $element = $('header');
-$element.css('color', '#FF0000');
+$('header').css('color', '#FF0000');
